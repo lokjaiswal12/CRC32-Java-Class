@@ -87,7 +87,7 @@ class CRC {
         		crcToFlip="0"+crcToFlip;
         }
         String crcStr = crcToFlip.substring(crcToFlip.length()-2, crcToFlip.length()) + crcToFlip.substring(crcToFlip.length()-4, crcToFlip.length()-2) + crcToFlip.substring(crcToFlip.length()-6, crcToFlip.length()-4) + crcToFlip.substring(0, crcToFlip.length()-6);
-        //System.out.println("CRC32  (via table lookup)   "+ crcToFlip+" "+ c +"    = " + crcStr);
+        System.out.println("CRC32 of "+ c +" : " + crcStr);
         return crcStr;
     }
 
